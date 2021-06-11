@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.Home">
+    <children>
+        <BorderPane fx:id="mainPane" layoutX="-14.0" layoutY="-13.0" prefHeight="565.0" prefWidth="800.0" AnchorPane.bottomAnchor="48.0" AnchorPane.leftAnchor="-14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="-13.0">
+            <left>
+                <VBox prefHeight="390.0" prefWidth="150.0" spacing="30.0" style="-fx-background-color: #eee;" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button layoutX="25.0" layoutY="65.0" mnemonicParsing="false" onAction="#loadHome" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #eee;" text="Home" textAlignment="CENTER">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="5.0" left="15.0" right="5.0" top="5.0" />
+                            </VBox.margin>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#loadBooking" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #eee;" text="Booking" textAlignment="CENTER">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="5.0" left="15.0" right="5.0" />
+                            </VBox.margin>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#loadAccountDetail" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #eee;" text="My account">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="5.0" left="15.0" right="5.0" />
+                            </VBox.margin>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#loadHistory" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #eee;" text="History">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="5.0" left="15.0" right="5.0" />
+                            </VBox.margin>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#Logout" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #eee;" text="Logout">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                        </Button>
+                    </children>
+                    <BorderPane.margin>
+                        <Insets />
+                    </BorderPane.margin>
+                    <padding>
+                        <Insets top="15.0" />
+                    </padding>
+                </VBox>
+            </left>
+        </BorderPane>
+        <Label fx:id="isConnected" alignment="CENTER_RIGHT" layoutX="639.0" layoutY="14.0" prefHeight="25.0" prefWidth="147.0" style="-fx-font-style: italic; -fx-underline: true; -fx-font-size: 16;" textAlignment="RIGHT" AnchorPane.leftAnchor="639.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" />
+            <Label layoutX="263.0" layoutY="7.0" prefHeight="0.0" prefWidth="213.0" text="HOTDESKING" textAlignment="CENTER" textFill="#6f5a5a">
+                <font>
+                    <Font name="Berlin Sans FB" size="35.0" />
+                   </font>
+            </Label>
+    </children>
+</AnchorPane>

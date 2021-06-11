@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.Reset">
+    <children>
+        <VBox alignment="TOP_CENTER" layoutX="174.0" layoutY="390.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="176.0" prefWidth="420.0" spacing="10.0" AnchorPane.bottomAnchor="34.0" AnchorPane.leftAnchor="174.0" AnchorPane.rightAnchor="206.0" AnchorPane.topAnchor="390.0" />
+        <Button fx:id="confirmButton" blendMode="DARKEN" defaultButton="true" layoutX="290.0" layoutY="438.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#resetPage" prefHeight="50.0" prefWidth="183.0" style="-fx-background-color: Blue;" text="CONFIRM" textAlignment="CENTER" AnchorPane.leftAnchor="290.0" AnchorPane.rightAnchor="327.0">
+            <font>
+                <Font name="Comic Sans MS" size="15.0" />
+            </font>
+         <effect>
+            <Reflection />
+         </effect></Button>
+        <Label fx:id="isConnected" layoutX="14.0" layoutY="566.0" text="Status">
+
+        </Label>
+          <Label layoutX="239.0" layoutY="70.0" prefHeight="51.0" prefWidth="289.0" text="RESET PASSWORD" textAlignment="CENTER">
+              <font>
+                  <Font size="35.0" />
+              </font>
+          </Label>
+          <Label fx:id="failMessage" layoutX="390.0" layoutY="158.0" prefHeight="26.0" prefWidth="39.0" textFill="#ff3a00">
+              <font>
+                  <Font size="17.0" />
+              </font>
+          </Label>
+          <TextField fx:id="txtUsername" layoutX="40.0" layoutY="220.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="300.0" promptText="Username" />
+          <TextField fx:id="txtAnswer" layoutX="234.0" layoutY="308.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="300.0" promptText="Answer" />
+          <TextField fx:id="txtSecret" layoutX="444.0" layoutY="220.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="300.0" promptText="Secret Question" />
+          <Hyperlink layoutX="296.0" layoutY="373.0" onAction="#loginPage" prefHeight="33.0" prefWidth="207.0" text="Return to Login Page">
+              <font>
+                  <Font size="16.0" />
+              </font>
+          </Hyperlink>
+
+
+    </children>
+
+</AnchorPane>

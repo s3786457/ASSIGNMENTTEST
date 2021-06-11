@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.CheckSeats">
+    <children>
+        <Button fx:id="C2" layoutX="104.0" layoutY="411.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="27.0" prefWidth="34.0" style="-fx-background-color: #7ab648;" />
+        <Button fx:id="C3" layoutX="161.0" layoutY="411.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="27.0" prefWidth="34.0" style="-fx-background-color: #7ab648;" />
+        <Button fx:id="A2" layoutX="104.0" layoutY="272.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="27.0" prefWidth="34.0" style="-fx-background-color: #7ab648;" />
+        <Button fx:id="A1" layoutX="48.0" layoutY="272.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="27.0" prefWidth="34.0" style="-fx-background-color: #7ab648;" />
+        <Button fx:id="B1" layoutX="48.0" layoutY="340.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="27.0" prefWidth="34.0" style="-fx-background-color: #7ab648;" />
+        <Button fx:id="C1" layoutX="48.0" layoutY="411.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="27.0" prefWidth="34.0" style="-fx-background-color: #7ab648;" />
+        <Button fx:id="D1" layoutX="48.0" layoutY="480.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="27.0" prefWidth="34.0" style="-fx-background-color: #7ab648;" />
+        <Button fx:id="B2" layoutX="104.0" layoutY="340.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="27.0" prefWidth="34.0" style="-fx-background-color: #7ab648;" />
+        <Button fx:id="B3" layoutX="161.0" layoutY="340.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="27.0" prefWidth="34.0" style="-fx-background-color: #7ab648;" />
+        <Button layoutX="386.0" layoutY="379.0" mnemonicParsing="false" onAction="#Confirm" prefHeight="40.0" prefWidth="110.0" text="Confirm" />
+        <Label layoutX="337.0" layoutY="14.0" prefHeight="88.0" prefWidth="300.0" text="Select Seats">
+            <font>
+                <Font size="26.0" />
+            </font>
+        </Label>
+        <Label layoutX="327.0" layoutY="125.0" text=":  Available" />
+        <Label layoutX="327.0" layoutY="177.0" text=":  Booked" />
+        <Label layoutX="327.0" layoutY="231.0" text=":  Locked" />
+        <Label fx:id="txtSeat" layoutX="471.0" layoutY="318.0" prefHeight="27.0" prefWidth="80.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="failMessage" layoutX="356.0" layoutY="477.0" prefHeight="34.0" prefWidth="361.0" textFill="#ff0b00" />
+      <Button fx:id="A3" layoutX="161.0" layoutY="272.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="27.0" prefWidth="34.0" style="-fx-background-color: #7ab648;" />
+      <Button fx:id="B4" layoutX="217.0" layoutY="340.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="27.0" prefWidth="34.0" style="-fx-background-color: #7ab648;" />
+      <Button fx:id="A4" layoutX="217.0" layoutY="272.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="27.0" prefWidth="34.0" style="-fx-background-color: #7ab648;" />
+      <Button fx:id="D4" layoutX="217.0" layoutY="480.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="27.0" prefWidth="34.0" style="-fx-background-color: #7ab648;" />
+      <Button fx:id="D2" layoutX="104.0" layoutY="480.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="27.0" prefWidth="34.0" style="-fx-background-color: #7ab648;" />
+      <Button fx:id="C4" layoutX="217.0" layoutY="411.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="27.0" prefWidth="34.0" style="-fx-background-color: #7ab648;" />
+      <Button fx:id="D3" layoutX="161.0" layoutY="480.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="27.0" prefWidth="34.0" style="-fx-background-color: #7ab648;" />
+      <Label layoutX="283.0" layoutY="125.0" text="Green" />
+      <Label layoutX="285.0" layoutY="177.0" text="Red" />
+      <Label layoutX="279.0" layoutY="231.0" text="Orange" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="300.0" maxWidth="300.0" prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.Password">
+    <children>
+        <VBox alignment="TOP_CENTER" layoutX="130.0" layoutY="178.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="252.0" prefWidth="539.0" spacing="15.0" AnchorPane.bottomAnchor="154.0" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="131.0" AnchorPane.topAnchor="178.0">
+            <children>
+                <Label fx:id="txtNewPass" style="-fx-font-weight: bold; -fx-font-size: 32;" textAlignment="CENTER">
+                    <font>
+                        <Font size="26.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="7.0" />
+                    </VBox.margin>
+                </Label>
+                <Label text="Password Updated">
+                    <font>
+                        <Font size="21.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <Button fx:id="copyButton" mnemonicParsing="false" onAction="#Copy" text="Copy">
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
+        <Button blendMode="DARKEN" defaultButton="true" layoutX="255.0" layoutY="452.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#loginPage" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: white;" text="Return to Login" textAlignment="CENTER" AnchorPane.leftAnchor="255.0" AnchorPane.rightAnchor="245.0">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+            </font>
+            <effect>
+                <Lighting>
+                    <bumpInput>
+                        <Shadow height="0.0" radius="0.0" width="0.0" />
+                    </bumpInput>
+                </Lighting>
+            </effect>
+        </Button>
+        <Label fx:id="isConnected" layoutX="14.0" layoutY="567.0" text="Status" />
+    </children>
+</AnchorPane>

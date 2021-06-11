@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="608.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.BookingHistory">
+    <children>
+        <VBox alignment="CENTER" layoutX="14.0" layoutY="1.0" prefHeight="342.0" prefWidth="577.0" spacing="20.0" AnchorPane.bottomAnchor="57.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="1.0">
+            <children>
+                <Label fx:id="successMessage" textAlignment="CENTER" textFill="#0088ff">
+                    <graphic>
+                        <Label fx:id="failMessage" textAlignment="CENTER" textFill="RED">
+                            <font>
+                                <Font size="17.0" />
+                            </font>
+                        </Label>
+                    </graphic>
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Label>
+                <TableView fx:id="table" onMouseClicked="#getSelected" prefHeight="296.0" prefWidth="571.0">
+                    <columns>
+                        <TableColumn fx:id="col_id" prefWidth="50.0" text="ID" />
+                        <TableColumn fx:id="col_date" minWidth="0.0" prefWidth="140.0" text="Date" />
+                        <TableColumn fx:id="col_time" prefWidth="99.0" text="Time" />
+                        <TableColumn fx:id="col_seat" prefWidth="65.0" text="Seat" />
+                        <TableColumn fx:id="col_approved" prefWidth="123.0" text="Approved?" />
+                    </columns>
+                </TableView>
+            </children>
+        </VBox>
+        <Button layoutX="401.0" layoutY="360.0" mnemonicParsing="false" onAction="#Cancel" text="Cancel" />
+    </children>
+</AnchorPane>
